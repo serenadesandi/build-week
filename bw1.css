@@ -1,0 +1,94 @@
+body {
+    background-image: url(/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    width: 1024px;
+    height: 768px;
+    position: relative;
+    padding: 40px;
+    box-sizing: auto;
+
+  }
+
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  .title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 60px;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    color: whitesmoke;
+  }
+
+  .subtitle {
+    font-family: 'Outfit', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+    color: whitesmoke
+  }
+
+  .instructions {
+    color: #D20094;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .details {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: whitesmoke;
+  }
+
+  .details ul {
+    padding-left: 20px;
+    margin: 0;
+    color: whitesmoke;
+  }
+
+  .checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: whitesmoke;
+  }
+
+  .checkbox input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  .proceed-button {
+    margin-top: 30px;
+    background: #00FFFF;
+    box-shadow: 0 0 10px 2px #00FFFF;
+    border: none;
+    padding: 15px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #0D1025;
+    margin-right: auto;
+
+
+
+  }
+
+  .proceed-button:hover {
+    background-color: #00e5e5;
+  }
