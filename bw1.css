@@ -142,24 +142,76 @@ body {
   border-right: solid 1px white;
   border-left: solid 1px white;
   border-bottom: solid 0.5px rgba(206, 196, 196, 0.293);
-  cursor: pointer; /* aggiungo la manina quando vai a cliccare sulla risposta*/
+  cursor: pointer; 
 
 }
-/* centro il testo in basso sul numero della domanda e dò un colore*/
 .question_number {
   display: flex;
-  justify-content: center; /* Centro orizzontalmente */
-  align-items: center; /* Centro verticalmente se necessario */
-  margin-top: 20px; /* Aggiungo uno spazio sopra il titolo */
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 20px; 
 }
 
 .question_number h2 {
-  color: white; /* Colore del testo */
-  text-align: center; /* testo centrato */
+  color: white; 
+  text-align: center; 
 }
 .question_number h2 span {
-  color: #d20094; /*aggiungo colore al numero della domanda*/
+  color: #d20094; 
 }
 .answer_input:hover{
   background-color: #d200939a;
+}
+.tempo{ 
+  border-radius: 50%;
+}
+  
+
+/*inizio il css del timer*/
+
+.timer {
+  position: fixed; 
+  top: 100px; 
+  right: 200px; 
+  width: 120px; 
+  height: 120px; 
+}
+
+.circle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; 
+  background: conic-gradient(
+    rgba(2, 245, 229, 0.932) 0%,
+    rgba(2, 245, 229, 0.932) var(--progress),
+    transparent var(--progress),
+    transparent 100%
+  );
+}
+
+.inside-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px; 
+}
+/*fine css timer*/
+
+/*css domande*/
+h1{ 
+  color:white;
+  text-align: center;
+}
+
+p{
+  color: white;
+}
+.final-score h2{
+  color:white;
 }
