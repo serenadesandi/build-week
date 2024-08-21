@@ -136,13 +136,30 @@ body {
   color: white;
   width: 32vh;
   height: 9vh;
-  border-top-left-radius: 35%;
-  border-top-right-radius: 35%;
-  border-bottom-left-radius: 35%;
-  border-bottom-right-radius: 35%;
-  border-end-end-radius: 35;
+  border-radius: 35%;
   background-color: transparent;
   border-top: solid 2px rgb(255, 255, 255);
   border-right: solid 1px white;
   border-left: solid 1px white;
+  border-bottom: solid 0.5px rgba(206, 196, 196, 0.293);
+  cursor: pointer; /* aggiungo la manina quando vai a cliccare sulla risposta*/
+
+}
+/* centro il testo in basso sul numero della domanda e dò un colore*/
+.question_number {
+  display: flex;
+  justify-content: center; /* Centro orizzontalmente */
+  align-items: center; /* Centro verticalmente se necessario */
+  margin-top: 20px; /* Aggiungo uno spazio sopra il titolo */
+}
+
+.question_number h2 {
+  color: white; /* Colore del testo */
+  text-align: center; /* testo centrato */
+}
+.question_number h2 span {
+  color: #d20094; /*aggiungo colore al numero della domanda*/
+}
+.answer_input:hover{
+  background-color: #d200939a;
 }
