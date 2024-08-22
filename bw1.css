@@ -10,7 +10,6 @@ body {
   position: relative;
   padding: 40px;
   box-sizing: auto;
-
 }
 
 .logo {
@@ -24,7 +23,7 @@ body {
 }
 
 .title {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 60px;
   margin-top: 150px;
   margin-bottom: 10px;
@@ -32,15 +31,15 @@ body {
 }
 
 .subtitle {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 60px;
   font-weight: 700;
   margin: 0;
-  color: whitesmoke
+  color: whitesmoke;
 }
 
 .instructions {
-  color: #D20094;
+  color: #d20094;
   font-weight: bold;
   font-size: 24px;
   margin-top: 20px;
@@ -73,34 +72,39 @@ body {
   margin-right: 10px;
 }
 
+.default-button {
+  margin-top: 30px;
+  background: gray;
+  border: none;
+  padding: 15px 40px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #0d1025;
+  margin-right: auto;
+}
+
 .proceed-button {
   margin-top: 30px;
-  background: #00FFFF;
-  box-shadow: 0 0 10px 2px #00FFFF;
+  background: #00ffff;
+  box-shadow: 0 0 10px 2px #00ffff;
   border: none;
   padding: 15px 40px;
   font-size: 24px;
   font-weight: bold;
   cursor: pointer;
-  color: #0D1025;
+  color: #0d1025;
   margin-right: auto;
-
-
-
 }
 
 .proceed-button:hover {
   background-color: #00e5e5;
 }
 
-
-
 /* css Question page */
 
 .core {
   display: flex;
   flex-direction: column;
-  
 }
 
 .header {
@@ -108,13 +112,12 @@ body {
   height: 40vh;
   width: 100%;
 }
-.logo_q{
+.logo_q {
   margin-top: 20vh;
   margin-left: 20vh;
-  width:13% ;
+  width: 13%;
   height: 17%;
 }
-
 
 .question {
   display: flex;
@@ -123,7 +126,7 @@ body {
   justify-content: center;
   color: white;
 }
-.container_answer{
+.container_answer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -132,7 +135,7 @@ body {
   margin-right: 50%;
   height: 40vh;
 }
-.answer_input{
+.answer_input {
   color: white;
   width: 32vh;
   height: 9vh;
@@ -142,46 +145,44 @@ body {
   border-right: solid 1px white;
   border-left: solid 1px white;
   border-bottom: solid 0.5px rgba(206, 196, 196, 0.293);
-  cursor: pointer; 
-
+  cursor: pointer;
 }
 .question_number {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
-  margin-top: 20px; 
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .question_number h2 {
-  color: white; 
-  text-align: center; 
+  color: white;
+  text-align: center;
 }
 .question_number h2 span {
-  color: #d20094; 
+  color: #d20094;
 }
-.answer_input:hover{
+.answer_input:hover {
   background-color: #d200939a;
 }
-.tempo{ 
+.tempo {
   border-radius: 50%;
 }
-  
 
 /*inizio il css del timer*/
 
 .timer {
-  position: fixed; 
-  top: 100px; 
-  right: 200px; 
-  width: 120px; 
-  height: 120px; 
+  position: fixed;
+  top: 100px;
+  right: 200px;
+  width: 120px;
+  height: 120px;
 }
 
 .circle {
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 50%; 
+  border-radius: 50%;
   background: conic-gradient(
     rgba(2, 245, 229, 0.932) 0%,
     rgba(2, 245, 229, 0.932) var(--progress),
@@ -199,19 +200,19 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 20px; 
+  font-size: 20px;
 }
 /*fine css timer*/
 
 /*css domande*/
-h1{ 
-  color:white;
+h1 {
+  color: white;
   text-align: center;
 }
 
-p{
+p {
   color: white;
 }
-.final-score h2{
-  color:white;
+.final-score h2 {
+  color: white;
 }
