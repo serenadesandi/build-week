@@ -1,4 +1,4 @@
-/*const questions = [
+const questions = [
     {
       category: "Science: Computers",
       type: "multiple",
@@ -96,7 +96,7 @@
       correct_answer: "Java",
       incorrect_answers: ["Python", "C", "Jakarta"],
     },
-  ];*/
+  ];
 
   const tempoTotale = 60; // 60 secondi
   let tempoRimanente = tempoTotale;
@@ -134,3 +134,7 @@
   
   // Imposta il timer inizialmente
   updateTimer();
+
+ setTimeout(function(){
+   window.location.reload(1);
+}, 60000);
