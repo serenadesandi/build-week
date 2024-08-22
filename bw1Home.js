@@ -1,15 +1,13 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const proceedButton = document.querySelector('.proceed-button');
-  const confirmCheckbox = document.getElementById('confirm');
+let confirmCheckbox = document.getElementById("confirm");
+confirmCheckbox.addEventListener("click", proceedButton);
 
-  proceedButton.disabled = true; //disabilita bottone "proceed"
-  confirmCheckbox.addEventListener('change', function() {
-    proceedButton.disabled = !confirmCheckbox.checked;
-  }); //abilita solo se c'è la spunta
+function proceedButton() {
+  let button = document.querySelector("button");
+  button = button.classList.toggle("proceed-button");
+} // cambia la classe al button
 
-  proceedButton.addEventListener('click', function() {
-    if (confirmCheckbox.checked) {
-    window.location.href = 'bw1Question.html'; 
-    } // indirizza alla pagina delle domande
-  });
-});
+function proceed() {
+  if (confirmCheckbox.checked) {
+    window.location.href = "bw1Question.html";
+  } // indirizza alla pagina delle domande
+}
